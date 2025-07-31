@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    font-family: 'Roboto Serif', serif;
+}
+.navbar-title{
+    font-size: 1.8rem;    
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+.navbar-gradient{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+.navbar-height{
+    height: 100px;
+}
+.nav-link:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+.bg-video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.bg-dropdownMenu{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.bg-dropdownMenu .dropdown-item {
+    color: #fff !important; /* cor da fonte desejada */
+}
+.bg-dropdownMenu .dropdown-item:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    background: transparent;
+    color: #74ff02 !important; /* cor ao passar o mouse */
+}
