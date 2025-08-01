@@ -40,3 +40,23 @@
     background: transparent;
     color: #74ff02 !important; /* cor ao passar o mouse */
 }
+.main-title{
+    margin-left: 6vh;
+    width: 60%;
+    font-size: 15vh;
+    margin-top: 35vh;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 700;
+    position: absolute;
+}
+aside{
+    position: absolute;
+    top: 30vh;
+    right: 35vh;
+    width: 20%;
+    height: 100%;
+}
+aside img{
+    width: 25vw;
+}
