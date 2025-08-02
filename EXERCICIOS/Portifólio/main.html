@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient fixed-top navbar-height p-4">
-        <a class="navbar-brand navbar-title">Yori Cunha</a>
+        <a class="navbar-brand navbar-title" href="#">Yori Cunha</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown p2">
@@ -23,9 +23,9 @@
                         Sobre Mim
                     </a>
                     <div class="dropdown-menu bg-dropdownMenu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Quem Sou</a>
-                        <a class="dropdown-item" href="#">Projetos</a>
-                        <a class="dropdown-item" href="#">Competências</a>
+                        <a class="dropdown-item" href="#quem">Quem Sou</a>
+                        <a class="dropdown-item" href="#competent">Competências</a>
+                        <a class="dropdown-item" href="#projetos">Projetos</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -34,7 +34,8 @@
             </ul>
         </div>
     </nav>
-    <video class="bg-video" autoplay muted loop disablepictureinpicture controlsList="nodownload nofullscreen noremoteplayback">
+    <video class="bg-video" autoplay muted loop disablepictureinpicture
+        controlsList="nodownload nofullscreen noremoteplayback">
         <source src="video.mp4" type="video/mp4">
         Seu navegador não suporta o vídeo.
     </video>
@@ -42,8 +43,52 @@
     <aside>
         <img src="me.png">
     </aside>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <section class="container texto-quem">
+        <div class="row mb-5 txt">
+            <div class="col-12">
+                <h2 id="quem">Quem Sou</h2>
+                <p>
+                    Sou um desenvolvedor em graduação, apaixonado por tecnologia e inovação. Concluí um curso técnico em
+                    Análise e Desenvolvimento de Sistemas, onde adquiri uma sólida base em programação e projetos de
+                    software. Atualmente, estou cursando o ensino superior na mesma área, buscando aprofundar meus
+                    conhecimentos e ampliar minha atuação no mercado de tecnologia. Estou sempre em busca de novos
+                    desafios e oportunidades para crescer profissionalmente.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12 txt">
+                <h2 id="competent">Competências</h2>
+                <p>
+                    Sou um desenvolvedor em graduação, apaixonado por tecnologia e inovação. Concluí um curso técnico em
+                    Análise e Desenvolvimento de Sistemas, onde adquiri uma sólida base em programação e projetos de
+                    software. Atualmente, estou cursando o ensino superior na mesma área, buscando aprofundar meus
+                    conhecimentos e ampliar minha atuação no mercado de tecnologia. Estou sempre em busca de novos
+                    desafios e oportunidades para crescer profissionalmente.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12 txt">
+                <h2 id="projetos">Projetos</h2>
+                <p>
+                    Sou um desenvolvedor em graduação, apaixonado por tecnologia e inovação. Concluí um curso técnico em
+                    Análise e Desenvolvimento de Sistemas, onde adquiri uma sólida base em programação e projetos de
+                    software. Atualmente, estou cursando o ensino superior na mesma área, buscando aprofundar meus
+                    conhecimentos e ampliar minha atuação no mercado de tecnologia. Estou sempre em busca de novos
+                    desafios e oportunidades para crescer profissionalmente.
+                </p>
+            </div>
+        </div>
+    </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
