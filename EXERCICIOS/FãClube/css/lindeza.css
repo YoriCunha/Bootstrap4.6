@@ -13,6 +13,37 @@ body {
     background-color: black;
 }
 
+.navbar-height {
+    height: 100px;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+.navbar img{
+    margin-left: 6vh;
+}
+.bg-dropdownMenu {
+    background: transparent !important;
+    backdrop-filter: blur(10px);
+}
+
+.bg-dropdownMenu .dropdown-item {
+    color: #fff !important;
+}
+
+.bg-dropdownMenu .dropdown-item:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    background: transparent;
+    color: #FFB800 !important;
+}
+
 /*-----Pagina Info----*/
 .info {
     background-image: url("/img/infocars.jpg");
