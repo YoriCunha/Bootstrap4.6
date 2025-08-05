@@ -4,42 +4,92 @@
 <head>
     <title> Carros </title>
     <link rel="Icon" type="Image/png" href="../img/logo.png">
-    <link rel="stylesheet" type="text/css" href="../css/lindeza.css">
+    <link rel="stylesheet" href="../css/lindeza.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ab4c965c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body class="cars">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-height p-4 mt-3">
+        <a class="navbar-brand navbar-title" href="../pag/main.html"><img src="../img/logo.png"
+                style="width: 3vw; height: 4vh;" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown p2">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sobre Nós <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu bg-dropdownMenu animated fadeInRight" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pag/info.html">História</a>
+                        <a class="dropdown-item" href="../pag/carros.html">Carros</a>
+                        <a class="dropdown-item" href="../pag/contato.html">Contato</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section>
-        <a href="../pag/main.html"><img src="../img/back.png" class="back"></a>
         <div class="conteiner">
             <h2><img src="../img/carros.png"></h2>
             <table>
                 <tr>
                     <th>Modelo</th>
-                    <th>Ano</th>    
+                    <th>Ano</th>
                     <th>0-100</th>
                 </tr>
                 <tr>
-                    <td><span class="hover-container">CC8S<img src="/img/cc8s.JPG" alt="CC8S" class="hover-image"></span></td>
+                    <td><span class="hover-container">CC8S<img src="/img/cc8s.JPG" alt="CC8S"
+                                class="hover-image"></span></td>
                     <td>2002</td>
                     <td>3,5s</td>
                 </tr>
                 <tr>
-                    <td><span class="hover-container">CCR<img src="/img/ccr.jpg" alt="CCR" class="hover-image"></span></td>
+                    <td><span class="hover-container">CCR<img src="/img/ccr.jpg" alt="CCR" class="hover-image"></span>
+                    </td>
                     <td>2004</td>
                     <td>3,2s</td>
                 </tr>
                 <tr>
-                    <td><span class="hover-container">Agera RS<img src="/img/agera.jpg" alt="Agera RS" class="hover-image"></span></td>
+                    <td><span class="hover-container">Agera RS<img src="/img/agera.jpg" alt="Agera RS"
+                                class="hover-image"></span></td>
                     <td>2015</td>
                     <td>2,8s</td>
                 </tr>
                 <tr>
-                    <td><span class="hover-container">Jesko Absolut<img src="/img/jesko.JPG" alt="jesko" class="hover-image"></span></td>
+                    <td><span class="hover-container">Jesko Absolut<img src="/img/jesko.JPG" alt="jesko"
+                                class="hover-image"></span></td>
                     <td>2019</td>
                     <td>2,6s</td>
                 </tr>
             </table>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $(this).addClass('show');
+                    $menu.addClass('show animated fadeInDown').removeClass('fadeOutUp');
+                },
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $menu.removeClass('fadeInDown').addClass('fadeOutUp');
+                    setTimeout(() => {
+                        $(this).removeClass('show');
+                        $menu.removeClass('show animated fadeOutUp');
+                    }, 500); // tempo da animação em ms
+                }
+            );
+        });
+    </script> -->
 </body>
+
 </html>

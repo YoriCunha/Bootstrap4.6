@@ -4,15 +4,38 @@
 <head>
     <title>Contato</title>
     <link rel="Icon" type="Image/png" href="../img/logo.png">
-    <link rel="stylesheet" type="text/css" href="../css/lindeza.css">
+    <link rel="stylesheet" href="../css/lindeza.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ab4c965c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body class="talk">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-height p-4 mt-3">
+        <a class="navbar-brand navbar-title" href="../pag/main.html"><img src="../img/logo.png"
+                style="width: 3vw; height: 4vh;" alt="Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown p2">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Sobre Nós <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu bg-dropdownMenu animated fadeInRight " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pag/info.html">História</a>
+                        <a class="dropdown-item" href="../pag/carros.html">Carros</a>
+                        <a class="dropdown-item" href="../pag/contato.html">Contato</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section>
-        <a href="../pag/main.html"><img src="../img/back.png" class="back"></a>
         <div class="conteiner2">
             <h2>Fale conosco!</h2>
-            <p>Tem alguma ideia para nosso Fã Clube? ou quer se membrar? Preencha este formulário e entraremos em contato!</p>
+            <p>Tem alguma ideia para nosso Fã Clube? ou quer se membrar? Preencha este formulário e entraremos em
+                contato!</p>
             <form name="frmfaleconosco" method="get" action="#">
                 <fieldset class="faleConosco">
                     <legend>Dados pessoais:</legend>
@@ -20,23 +43,46 @@
                     <input type="text" name="txtnome" id="nome">
                     <label for="email">Email: </label>
                     <input type="email" name="txtemail" id="email">
-                </fliedset>
-                <fieldset class="faleConosco">
-                    <legend>Motivo do contato:</legend>
-                    <label for="motivo">Motivo: </label>
-                    <select name="selmotivo" id="motivo">
-                        <option value="ES">Escolha</option>
-                        <option value="ID">Ideia</option>
-                        <option value="ME">Membrar-se</option>
-                    </select>
-                    <label for="comentario">Comentário: </label>
-                    <textarea name="txtcomentario" id="comentario"></textarea>
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </fieldset>
+                    </fliedset>
+                    <fieldset class="faleConosco">
+                        <legend>Motivo do contato:</legend>
+                        <label for="motivo">Motivo: </label>
+                        <select name="selmotivo" id="motivo">
+                            <option value="ES">Escolha</option>
+                            <option value="ID">Ideia</option>
+                            <option value="ME">Membrar-se</option>
+                        </select>
+                        <label for="comentario">Comentário: </label>
+                        <textarea name="txtcomentario" id="comentario"></textarea>
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
             </form>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $(this).addClass('show');
+                    $menu.addClass('show animated fadeInDown').removeClass('fadeOutUp');
+                },
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $menu.removeClass('fadeInDown').addClass('fadeOutUp');
+                    setTimeout(() => {
+                        $(this).removeClass('show');
+                        $menu.removeClass('show animated fadeOutUp');
+                    }, 500); // tempo da animação em ms
+                }
+            );
+        });
+    </script> -->
 </body>
 
 </html>

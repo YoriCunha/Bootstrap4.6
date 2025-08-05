@@ -18,13 +18,10 @@ body {
 }
 
 .nav-link {
+    color: #fff !important;
     font-size: 1.3rem;
 }
 
-.nav-link:hover {
-    transition: transform 0.3s ease;
-    transform: scale(1.05);
-}
 .navbar img{
     margin-left: 6vh;
 }

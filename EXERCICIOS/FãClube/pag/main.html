@@ -13,16 +13,17 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg fixed-top navbar-height p-4 mt-3">
-        <a class="navbar-brand navbar-title" href="#"><img src="../img/logo.png" style= "width: 3vw; height: 4vh;" alt="Logo"></a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-height p-4 mt-3">
+        <a class="navbar-brand navbar-title" href="#"><img src="../img/logo.png" style="width: 3vw; height: 4vh;"
+                alt="Logo"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown p2">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sobre Nós
+                        Sobre Nós <i class="fa fa-angle-down"></i>
                     </a>
-                    <div class="dropdown-menu bg-dropdownMenu " aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu bg-dropdownMenu animated fadeInRight" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="../pag/info.html">História</a>
                         <a class="dropdown-item" href="../pag/carros.html">Carros</a>
                         <a class="dropdown-item" href="../pag/contato.html">Contato</a>
@@ -47,25 +48,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('.nav-item.dropdown').hover(
-                function () {
-                    const $menu = $(this).find('.dropdown-menu');
-                    $(this).addClass('show');
-                    $menu.addClass('show animated fadeInDown').removeClass('fadeOutUp');
-                },
-                function () {
-                    const $menu = $(this).find('.dropdown-menu');
-                    $menu.removeClass('fadeInDown').addClass('fadeOutUp');
-                    setTimeout(() => {
-                        $(this).removeClass('show');
-                        $menu.removeClass('show animated fadeOutUp');
-                    }, 500); // tempo da animação em ms
-                }
-            );
-        });
-    </script>
 </body>
 
 </html>
