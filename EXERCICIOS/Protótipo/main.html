@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ab4c965c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Finder</title>
+</head>
+
+<body>
+    <nav class="navbar"
+        style="display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 5px 4px rgba(0, 0, 0, 0.253);">
+        <a class="navbar-brand navbar-title" style="font-size: 2.5rem; font-weight: bold; color: #333;">Book
+            Finder
+        </a>
+    </nav>
+    <div class="d-flex justify-content-center align-items-center" style="margin-top: 4rem;">
+        <form class="width-40">
+            <div class="input-group tela">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn bg-light" style="border:1px solid #00000036;" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Sidebar Filtros -->
+    <div class="sidebar ml-5 tela">
+        <h5>Filtrar</h5>
+        <hr>
+        <div class="mb-2 font-weight-bold">Gênero</div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="aventura">
+            <label class="form-check-label" for="aventura">Aventura</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="terror">
+            <label class="form-check-label" for="terror">Terror</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="fantasia">
+            <label class="form-check-label" for="fantasia">Fantasia</label>
+        </div>
+        <div class="mb-2 mt-3 font-weight-bold">Autor</div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cslewis">
+            <label class="form-check-label" for="cslewis">C.S. Lewis</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="jkrowling">
+            <label class="form-check-label" for="jkrowling">J.K. Rowling</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="jrrtolkien">
+            <label class="form-check-label" for="jrrtolkien">J.R.R Tolkien</label>
+        </div>
+        <div class="mb-2 mt-3 font-weight-bold">Faixa Etária</div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="juvenil">
+            <label class="form-check-label" for="juvenil">Juvenil</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="infantil">
+            <label class="form-check-label" for="infantil">Infantil</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="adulto">
+            <label class="form-check-label" for="adulto">Adulto</label>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
