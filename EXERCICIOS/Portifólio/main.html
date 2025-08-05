@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3ab4c965c5.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Meu Portifólio</title>
@@ -22,7 +23,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Sobre Mim
                     </a>
-                    <div class="dropdown-menu bg-dropdownMenu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu bg-dropdownMenu " aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#quem">Quem Sou</a>
                         <a class="dropdown-item" href="#competent">Competências</a>
                         <a class="dropdown-item" href="#projetos">Projetos</a>
@@ -31,11 +32,12 @@
                 <li class="nav-item dropdown p2">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contato 
+                        Contato
                     </a>
                     <div class="dropdown-menu bg-dropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#"><i class="fa fa-instagram"></i> yori.exe</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-github"></i> YoriCunha</a>                    
+                        <a class="dropdown-item" href="#"><i class="fa fa-github"></i> YoriCunha</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-linkedin"></i> Yori Gandolfi da Cunha</a>
                     </div>
                 </li>
             </ul>
@@ -51,7 +53,7 @@
         <img src="me.png">
     </aside>
     <section class="container texto-quem">
-        <div class="row mb-5 txt"id="quem">
+        <div class="row mb-5 txt" id="quem">
             <div class="col-12">
                 <h2>Quem Sou</h2>
                 <p>
@@ -92,7 +94,7 @@
             </a>
         </div>
         <br><br><br><br>
-        <div class="row"id="competent">
+        <div class="row" id="competent">
             <div class="col-12 txt">
                 <h2>Competências</h2>
                 <p>
@@ -105,7 +107,7 @@
             </div>
         </div>
         <br><br><br>
-        <div class="row"id="projetos">
+        <div class="row" id="projetos">
             <div class="col-12 txt">
                 <h2>Projetos</h2>
                 <p>
@@ -117,14 +119,32 @@
                 </p>
             </div>
         </div>
-    </section> 
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-item.dropdown').hover(
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $(this).addClass('show');
+                    $menu.addClass('show animated fadeInDown').removeClass('fadeOutUp');
+                },
+                function () {
+                    const $menu = $(this).find('.dropdown-menu');
+                    $menu.removeClass('fadeInDown').addClass('fadeOutUp');
+                    setTimeout(() => {
+                        $(this).removeClass('show');
+                        $menu.removeClass('show animated fadeOutUp');
+                    }, 500); // tempo da animação em ms
+                }
+            );
+        });
+</script>
+
 </body>
 
 </html>

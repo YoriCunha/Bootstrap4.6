@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-right: 1.5em;
     margin-left: 1.5em;
 }
@@ -22,6 +22,10 @@ body {
 
 .navbar-height {
     height: 100px;
+}
+
+.nav-link {
+    font-size: 1.3rem;
 }
 
 .nav-link:hover {
@@ -44,7 +48,6 @@ body {
 
 .bg-dropdownMenu .dropdown-item {
     color: #fff !important;
-    /* cor da fonte desejada */
 }
 
 .bg-dropdownMenu .dropdown-item:hover {
@@ -52,7 +55,6 @@ body {
     transform: scale(1.05);
     background: transparent;
     color: #74ff02 !important;
-    /* cor ao passar o mouse */
 }
 
 .main-title {
@@ -100,8 +102,12 @@ aside img {
 }
 
 .img-cover {
-    height: 100vh;
+    height: 70vh;
     object-fit: cover;
+}
+
+.carousel-inner {
+    height: 70vh;
 }
 
 .contato {
