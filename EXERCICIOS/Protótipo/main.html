@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3ab4c965c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,18 +12,79 @@
 </head>
 
 <body>
-    <nav class="navbar"
-        style="padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 5px 4px rgba(0, 0, 0, 0.253);">
+    <nav class="navbar navbar-expand border-bottom"
+        style="padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 5px 4px rgba(0,0,0,.25);">
         <div class="w-100 d-flex align-items-center justify-content-center position-relative">
-            <a class="navbar-brand navbar-title mx-auto" style="font-size: 2.5rem; font-weight: bold; color: #333;">Book
-                Finder</a>
+
+            <!-- botão que abre a sidebar -->
+            <button class="btn btn-outline-dark position-absolute" style="left: 0;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- título central -->
+            <a class="navbar-brand navbar-title mx-auto" href="#">Book Finder</a>
+
+            <!-- ícone de usuário -->
             <div class="position-absolute" style="right: 0;">
                 <a href="login.html" class="nav-link p-0">
-                    <i class="fas fa-user" style="font-size: 2rem; color: #333;"></i>
+                    <i class="fa-regular fa-user" style="font-size: 2rem; color: #333;"></i>
                 </a>
             </div>
         </div>
     </nav>
+
+    <!-- Offcanvas / Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">Filtros</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <div class="mb-2 font-weight-bold">Gênero</div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="aventura">
+                    <label class="form-check-label" for="aventura">Aventura</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terror">
+                    <label class="form-check-label" for="terror">Terror</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fantasia">
+                    <label class="form-check-label" for="fantasia">Fantasia</label>
+                </div>
+                <div class="mb-2 mt-3 font-weight-bold">Autor</div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cslewis">
+                    <label class="form-check-label" for="cslewis">C.S. Lewis</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="jkrowling">
+                    <label class="form-check-label" for="jkrowling">J.K. Rowling</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="jrrtolkien">
+                    <label class="form-check-label" for="jrrtolkien">J.R.R. Tolkien</label>
+                </div>
+                <div class="mb-2 mt-3 font-weight-bold">Faixa Etária</div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="juvenil">
+                    <label class="form-check-label" for="juvenil">Juvenil</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="infantil">
+                    <label class="form-check-label" for="infantil">Infantil</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="adulto">
+                    <label class="form-check-label" for="adulto">Adulto</label>
+                </div>
+                <button class="btn btn-light mt-4" style="width: 10rem;" type="button" data-bs-dismiss="offcanvas">Filtrar</button>
+            </ul>
+        </div>
+    </div>
     <div class="d-flex justify-content-center align-items-center" style="margin-top: 4rem;">
         <form class="w-5">
             <div class="input-group tela">
@@ -37,83 +97,51 @@
             </div>
         </form>
     </div>
-    <!-- Sidebar Filtros -->
-    <div class="sidebar tela">
-        <h5>Filtrar</h5>
-        <hr>
-        <div class="mb-2 font-weight-bold">Gênero</div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="aventura">
-            <label class="form-check-label" for="aventura">Aventura</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="terror">
-            <label class="form-check-label" for="terror">Terror</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="fantasia">
-            <label class="form-check-label" for="fantasia">Fantasia</label>
-        </div>
-        <div class="mb-2 mt-3 font-weight-bold">Autor</div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="cslewis">
-            <label class="form-check-label" for="cslewis">C.S. Lewis</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="jkrowling">
-            <label class="form-check-label" for="jkrowling">J.K. Rowling</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="jrrtolkien">
-            <label class="form-check-label" for="jrrtolkien">J.R.R Tolkien</label>
-        </div>
-        <div class="mb-2 mt-3 font-weight-bold">Faixa Etária</div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="juvenil">
-            <label class="form-check-label" for="juvenil">Juvenil</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="infantil">
-            <label class="form-check-label" for="infantil">Infantil</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="adulto">
-            <label class="form-check-label" for="adulto">Adulto</label>
-        </div>
-    </div>
     <section class="container">
         <div class="sellcard">
             <img src="img/livro1.jpg" alt="livro">
             <p class="descrição">Harry Potter e a Pedra Filosofal</p>
+            <p class="autor">J. K. Rowling</p>
         </div>
         <div class="sellcard">
             <img src="img/livro2.jpg" alt="livro">
             <p class="descrição">As Crónicas de Narnias</p>
+            <p class="autor">C. S. Lewis</p>
         </div>
         <div class="sellcard">
             <img src="img/livro3.jpg" alt="livro">
             <p class="descrição">O Hobbit</p>
+            <p class="autor">J. R. R. Tolkien</p>
+        </div>
+        <div class="sellcard">
+            <img src="img/livro4.jpg" alt="livro">
+            <p class="descrição">Percy Jackson e o Ladrão de Raios</p>
+            <p class="autor">Rick Riordan</p>
         </div>
     </section>
     <br>
     <section class="container">
         <div class="sellcard">
-            <img src="img/livro4.jpg" alt="livro">
-            <p class="descrição">Percy Jackson e o Ladrão de Raios</p>
+            <img src="img/livro7.png" alt="livro">
+            <p class="descrição">One Piece vol. 104</p>
+            <p class="autor">Eiichiro Oda</p>
         </div>
         <div class="sellcard">
             <img src="img/livro5.jpg" alt="Boné">
             <p class="descrição">A Arte da Guerra</p>
         </div>
         <div class="sellcard">
+            <img src="img/livro8.jpg" alt="Boné">
+            <p class="descrição">Bleach</p>
+        </div>
+        <div class="sellcard">
             <img src="img/livro6.jpg" alt="Camiseta">
             <p class="descrição">Assassin's Creed: Renegado</p>
         </div>
     </section>
+    <!-- Bootstrap JS bundle (inclui Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
