@@ -13,27 +13,26 @@
 
 <body>
     <nav class="navbar navbar-expand border-bottom"
-        style="padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 5px 4px rgba(0,0,0,.25);">
+        style="width: 100vw;padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 5px 4px rgba(0,0,0,.25);">
         <div class="w-100 d-flex align-items-center justify-content-center position-relative">
-
-            <!-- botão que abre a sidebar -->
-            <button class="btn btn-outlinedark position-absolute" style="border: 0; left: 0;" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Abrir menu">
-                <i class="fa fa-sliders" style="font-size: 1.5rem;"></i>
-            </button>
 
             <!-- título central -->
             <a class="navbar-brand navbar-title mx-auto" href="#">Book Finder</a>
 
             <!-- ícone de usuário -->
-            <div class="position-absolute" style="right: 0;">
+            <div class="position-absolute" style="right: 0; padding-right: 1rem;">
                 <a href="login.html" class="nav-link p-0">
                     <i class="fa-regular fa-user" style="font-size: 1.5rem; color: #333;"></i>
                 </a>
             </div>
         </div>
     </nav>
-
+    <button class="btn position-absolute" style="margin-top:4rem; padding: 0;"type="button"
+    data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Abrir menu">
+    <div style="padding: 0.5rem ;width: 2.5rem; height: auto; background-color: #d2b48c; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem;">
+        <span style="transform: rotate(180eg); color: #4e342e; font-weight: bold; letter-spacing: 0.2em;">F<br>I<br>L<br>T<br>R<br>O</span>
+    </div>
+    </button>
     <!-- Offcanvas / Sidebar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
         <div class="offcanvas-header">
